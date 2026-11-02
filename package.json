@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently -k -n API,WEB \"node server/index.js\" \"vite --host 127.0.0.1\"",
-    "build": "vite build",
+    "build": "vite build && node scripts/inline-pages.mjs",
     "preview": "vite preview",
     "start": "node server/index.js"
   },
