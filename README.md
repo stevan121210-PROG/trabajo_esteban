@@ -1,6 +1,15 @@
 # CMD · Panel local
 
-Aplicación local hecha con React, Express y SQLite para administrar personas y registrar pagos ficticios. El panel tiene una interfaz oscura inspirada en CMD.
+Aplicación React con interfaz oscura inspirada en CMD. Incluye una versión local con Express y SQLite, además de una demo pública de GitHub Pages que almacena sus ejemplos en el navegador.
+
+## Publicar una demo en GitHub Pages
+
+1. Sube el proyecto a un repositorio de GitHub. No subas `data/app.sqlite` ni datos personales reales.
+2. En el repositorio, abre **Settings → Pages** y elige **GitHub Actions** como fuente de publicación.
+3. Usa la rama `main` o `master` y sube los cambios. El flujo `.github/workflows/deploy.yml` compilará y publicará la demo automáticamente.
+4. En **Actions**, espera a que termine correctamente el flujo **Deploy GitHub Pages**. La URL aparecerá en el resultado del despliegue y en **Settings → Pages**.
+
+La demo pública no tiene contraseña ni servidor: es una muestra, no una aplicación privada. Los datos se guardan únicamente en el almacenamiento del navegador de cada visitante; no se comparten entre visitantes y se pueden borrar al limpiar los datos del navegador. No introduzcas información personal real. Los pagos son registros ficticios; no se realizan cobros.
 
 ## Requisitos
 
